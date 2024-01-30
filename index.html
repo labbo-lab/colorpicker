@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Color Picker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="cont">
+  <div id="rgb" title="Red, green, blue">rgb(0, 0, 0)</div>
+  <div id="hex" title="Hexadecimal representation of RGB">#000000</div>
+  <div id="hexTrim" title="A rounded version of Hex">#000</div>
+  <div id="hr"></div>
+  <div id="saveButton">SAVE</div>
+</div>
+<canvas id="canvas"></canvas>
+
+<input type="color" name="" id="colorpicker" color="">
+<dialog id="saveDialog">
+  <div id="dialogCont">
+<!--     <input type="color" name="" id="savePicker"> -->
+    <input min="0" type="number" placeholder="WIDTH" id="width" class="wh">
+    <input min="0" type="number" placeholder="HEIGHT" id="height" class="wh">
+    <button id="SDSave">SAVE</button>
+    <form method="dialog">
+      <button>CLOSE</button>
+    </form>
+  </div>
+</dialog>
+  <script src="script.js"></script>
+</body>
+
+</html>
